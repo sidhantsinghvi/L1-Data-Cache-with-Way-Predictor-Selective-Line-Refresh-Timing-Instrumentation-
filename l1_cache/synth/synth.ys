@@ -1,0 +1,6 @@
+read_verilog ../rtl/*.v
+hierarchy -top l1_cache_top
+synth -top l1_cache_top
+stat
+write_json l1_cache.json
+write_verilog l1_cache_synth.v
